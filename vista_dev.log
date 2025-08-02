@@ -1,0 +1,14 @@
+
+> vista-chat@0.1.0 dev /Users/polyversai/Codebase/Klaudiusz/libraxis-ai
+> next dev --port 3993
+
+   ▲ Next.js 15.2.4
+   - Local:        http://localhost:3993
+   - Network:      http://192.168.1.222:3993
+   - Experiments (use with caution):
+     ✓ webpackBuildWorker
+     ✓ parallelServerCompiles
+     ✓ parallelServerBuildTraces
+
+ ✓ Starting...
+ ✓ Ready in 1300ms
