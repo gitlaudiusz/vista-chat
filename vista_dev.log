@@ -12,3 +12,931 @@
 
  ✓ Starting...
  ✓ Ready in 1300ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1944ms (1592 modules)
+ GET /apple-touch-icon.png 404 in 2119ms
+ GET /apple-touch-icon-precomposed.png 404 in 2118ms
+ GET / 200 in 2219ms
+ ✓ Compiled /icon in 232ms (1597 modules)
+ GET /icon 200 in 357ms
+ GET /apple-icon 200 in 358ms
+ GET / 200 in 210ms
+ ⚠ Cross origin request detected from vista.libraxis.cloud to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 46ms
+ ✓ Compiled /api/chat in 340ms (933 modules)
+[36m[2025-08-02T14:33:35.330Z] [INFO] [chat] Chat session started[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  metadata: {}
+}
+[36m[2025-08-02T14:33:35.331Z] [INFO] [chat] Chat message: user[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'user',
+  contentLength: 9,
+  contentPreview: 'hej vista',
+  timestamp: 2025-08-02T14:33:35.331Z,
+  metadata: { source: 'chat-api' }
+}
+[36m[2025-08-02T14:33:35.331Z] [INFO] [api] Processing chat request[0m
+{
+  messagePreview: 'hej vista...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  historyLength: 0,
+  stage: 'greeting',
+  language: 'en'
+}
+[36m[2025-08-02T14:33:35.331Z] [INFO] [chat] Vista received message[0m
+{
+  messagePreview: 'hej vista',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5'
+}
+[36m[2025-08-02T14:33:35.331Z] [INFO] [api] Sending request to Vista API[0m
+{ messageCount: 2, sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5' }
+[36m[2025-08-02T14:33:37.397Z] [INFO] [chat] Vista response generated successfully[0m
+{
+  responseLength: 54,
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  duration: 2066
+}
+[36m[2025-08-02T14:33:37.398Z] [INFO] [chat] Chat message: assistant[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'assistant',
+  contentLength: 54,
+  contentPreview: 'Hej, stary! Co tam? Jakieś ciekawe przypadki ostatnio?',
+  timestamp: 2025-08-02T14:33:37.398Z,
+  metadata: {
+  source: 'chat-api',
+  phase: 'technical',
+  stage: 'greeting',
+  next_action: 'continue_chat'
+}
+}
+ POST /api/chat 200 in 2497ms
+[36m[2025-08-02T14:33:45.999Z] [INFO] [chat] Chat message: user[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'user',
+  contentLength: 25,
+  contentPreview: 'tak, mam dziwny przypadek',
+  timestamp: 2025-08-02T14:33:45.999Z,
+  metadata: { source: 'chat-api' }
+}
+[36m[2025-08-02T14:33:46.000Z] [INFO] [api] Processing chat request[0m
+{
+  messagePreview: 'tak, mam dziwny przypadek...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  historyLength: 2,
+  stage: 'greeting',
+  language: 'en'
+}
+[36m[2025-08-02T14:33:46.000Z] [INFO] [chat] Vista received message[0m
+{
+  messagePreview: 'tak, mam dziwny przypadek',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5'
+}
+[36m[2025-08-02T14:33:46.000Z] [INFO] [api] Sending request to Vista API[0m
+{ messageCount: 4, sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5' }
+[36m[2025-08-02T14:33:47.015Z] [INFO] [chat] Vista response generated successfully[0m
+{
+  responseLength: 49,
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  duration: 1015
+}
+[36m[2025-08-02T14:33:47.015Z] [INFO] [chat] Chat message: assistant[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'assistant',
+  contentLength: 49,
+  contentPreview: 'No to wal. Co to za zwierzak? Rasa, wiek, objawy?',
+  timestamp: 2025-08-02T14:33:47.015Z,
+  metadata: {
+  source: 'chat-api',
+  phase: 'technical',
+  stage: 'greeting',
+  next_action: 'continue_chat'
+}
+}
+ POST /api/chat 200 in 1030ms
+[36m[2025-08-02T14:34:27.486Z] [INFO] [chat] Chat message: user[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'user',
+  contentLength: 73,
+  contentPreview: 'kot, Brytyjki, ok 6 lat, nie chodzi - nagle, bólowy ewidentnie w cholerę ',
+  timestamp: 2025-08-02T14:34:27.486Z,
+  metadata: { source: 'chat-api' }
+}
+[36m[2025-08-02T14:34:27.486Z] [INFO] [api] Processing chat request[0m
+{
+  messagePreview: 'kot, Brytyjki, ok 6 lat, nie chodzi - nagle, bólow...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  historyLength: 4,
+  stage: 'exploration',
+  language: 'pl'
+}
+[36m[2025-08-02T14:34:27.486Z] [INFO] [chat] Vista received message[0m
+{
+  messagePreview: 'kot, Brytyjki, ok 6 lat, nie chodzi - nagle, bólowy ewidentnie w cholerę ',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5'
+}
+[36m[2025-08-02T14:34:27.486Z] [INFO] [api] Sending request to Vista API[0m
+{ messageCount: 6, sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5' }
+[36m[2025-08-02T14:34:37.882Z] [INFO] [chat] Vista response generated successfully[0m
+{
+  responseLength: 977,
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  duration: 10396
+}
+[36m[2025-08-02T14:34:37.882Z] [INFO] [chat] Chat message: assistant[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'assistant',
+  contentLength: 977,
+  contentPreview: 'Ach, kulawizna u kota... Może być uraz, nowotwór, zapalenie stawów. Opisz objawy bardziej szczegółow...',
+  timestamp: 2025-08-02T14:34:37.882Z,
+  metadata: {
+  source: 'chat-api',
+  phase: 'technical',
+  stage: 'exploration',
+  next_action: 'continue_chat'
+}
+}
+ POST /api/chat 200 in 10407ms
+[36m[2025-08-02T14:35:17.651Z] [INFO] [chat] Chat message: user[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'user',
+  contentLength: 102,
+  contentPreview: 'to nie jest kulawizna. totalnie porażony tył, brak czucia w miednicznych, ciągnie tył za sobą jak fo...',
+  timestamp: 2025-08-02T14:35:17.651Z,
+  metadata: { source: 'chat-api' }
+}
+[36m[2025-08-02T14:35:17.652Z] [INFO] [api] Processing chat request[0m
+{
+  messagePreview: 'to nie jest kulawizna. totalnie porażony tył, brak...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  historyLength: 6,
+  stage: 'technical_discussion',
+  language: 'pl'
+}
+[36m[2025-08-02T14:35:17.652Z] [INFO] [chat] Vista received message[0m
+{
+  messagePreview: 'to nie jest kulawizna. totalnie porażony tył, brak czucia w miednicznych, ciągnie tył za sobą jak fo...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5'
+}
+[36m[2025-08-02T14:35:17.652Z] [INFO] [api] Sending request to Vista API[0m
+{ messageCount: 8, sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5' }
+[36m[2025-08-02T14:35:26.169Z] [INFO] [chat] Vista response generated successfully[0m
+{
+  responseLength: 816,
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  duration: 8517
+}
+[36m[2025-08-02T14:35:26.169Z] [INFO] [chat] Chat message: assistant[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'assistant',
+  contentLength: 816,
+  contentPreview: 'O kurwa, to brzmi poważnie. Porażenie tylnych kończyn u kota - może być:\n\n1. Uraz rdzenia kręgowego ...',
+  timestamp: 2025-08-02T14:35:26.169Z,
+  metadata: {
+  source: 'chat-api',
+  phase: 'technical',
+  stage: 'technical_discussion',
+  next_action: 'continue_chat'
+}
+}
+ POST /api/chat 200 in 8528ms
+[36m[2025-08-02T14:36:04.039Z] [INFO] [chat] Chat message: user[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'user',
+  contentLength: 39,
+  contentPreview: 'nie krwawi z pazurów nawet. co mu jest?',
+  timestamp: 2025-08-02T14:36:04.039Z,
+  metadata: { source: 'chat-api' }
+}
+[36m[2025-08-02T14:36:04.039Z] [INFO] [api] Processing chat request[0m
+{
+  messagePreview: 'nie krwawi z pazurów nawet. co mu jest?...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  historyLength: 8,
+  stage: 'technical_discussion',
+  language: 'pl'
+}
+[36m[2025-08-02T14:36:04.039Z] [INFO] [chat] Vista received message[0m
+{
+  messagePreview: 'nie krwawi z pazurów nawet. co mu jest?',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5'
+}
+[36m[2025-08-02T14:36:04.039Z] [INFO] [api] Sending request to Vista API[0m
+{ messageCount: 10, sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5' }
+[36m[2025-08-02T14:36:14.152Z] [INFO] [chat] Vista response generated successfully[0m
+{
+  responseLength: 965,
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  duration: 10113
+}
+[36m[2025-08-02T14:36:14.152Z] [INFO] [chat] Chat message: assistant[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'assistant',
+  contentLength: 965,
+  contentPreview: 'To dobry znak - krwawienie z pazurów sugerowałoby uraz. Skoro nie ma krwawienia, prawdopodobnie to n...',
+  timestamp: 2025-08-02T14:36:14.152Z,
+  metadata: {
+  source: 'chat-api',
+  phase: 'technical',
+  stage: 'technical_discussion',
+  next_action: 'continue_chat'
+}
+}
+ POST /api/chat 200 in 10123ms
+[36m[2025-08-02T14:36:48.219Z] [INFO] [chat] Chat message: user[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'user',
+  contentLength: 78,
+  contentPreview: 'nie masz racji. nie krwawi - bo nie ma krążenia. zator jeżdżą - czy kojarzysz?',
+  timestamp: 2025-08-02T14:36:48.219Z,
+  metadata: { source: 'chat-api' }
+}
+[36m[2025-08-02T14:36:48.219Z] [INFO] [api] Processing chat request[0m
+{
+  messagePreview: 'nie masz racji. nie krwawi - bo nie ma krążenia. z...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  historyLength: 10,
+  stage: 'technical_discussion',
+  language: 'pl'
+}
+[36m[2025-08-02T14:36:48.219Z] [INFO] [chat] Vista received message[0m
+{
+  messagePreview: 'nie masz racji. nie krwawi - bo nie ma krążenia. zator jeżdżą - czy kojarzysz?',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5'
+}
+[36m[2025-08-02T14:36:48.220Z] [INFO] [api] Sending request to Vista API[0m
+{ messageCount: 12, sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5' }
+[36m[2025-08-02T14:36:54.626Z] [INFO] [chat] Vista response generated successfully[0m
+{
+  responseLength: 611,
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  duration: 6407
+}
+[36m[2025-08-02T14:36:54.626Z] [INFO] [chat] Chat message: assistant[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'assistant',
+  contentLength: 611,
+  contentPreview: 'Zator tętnicy krezkowej to poważna sprawa! Objawy: nagła utrata apetytu, wymioty, biegunka, osłabien...',
+  timestamp: 2025-08-02T14:36:54.626Z,
+  metadata: {
+  source: 'chat-api',
+  phase: 'technical',
+  stage: 'technical_discussion',
+  next_action: 'continue_chat'
+}
+}
+ POST /api/chat 200 in 6416ms
+[36m[2025-08-02T14:38:09.657Z] [INFO] [chat] Chat message: user[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'user',
+  contentLength: 2045,
+  contentPreview: 'Choroba zatorowo-zakrzepowa tętnic kotów (ang. arterial thromboembolism, ATE) to wyniszczająca choro...',
+  timestamp: 2025-08-02T14:38:09.657Z,
+  metadata: { source: 'chat-api' }
+}
+[36m[2025-08-02T14:38:09.657Z] [INFO] [api] Processing chat request[0m
+{
+  messagePreview: 'Choroba zatorowo-zakrzepowa tętnic kotów (ang. art...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  historyLength: 12,
+  stage: 'technical_discussion',
+  language: 'pl'
+}
+[36m[2025-08-02T14:38:09.657Z] [INFO] [chat] Vista received message[0m
+{
+  messagePreview: 'Choroba zatorowo-zakrzepowa tętnic kotów (ang. arterial thromboembolism, ATE) to wyniszczająca choro...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5'
+}
+[36m[2025-08-02T14:38:09.657Z] [INFO] [api] Sending request to Vista API[0m
+{ messageCount: 14, sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5' }
+[36m[2025-08-02T14:38:15.767Z] [INFO] [chat] Vista response generated successfully[0m
+{
+  responseLength: 490,
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  duration: 6110
+}
+[36m[2025-08-02T14:38:15.767Z] [INFO] [chat] Chat message: assistant[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'assistant',
+  contentLength: 490,
+  contentPreview: 'Dzięki za komplement! Naprawdę staram się być jak najlepszy. Ale zgadzam się, muszę jeszcze trochę p...',
+  timestamp: 2025-08-02T14:38:15.767Z,
+  metadata: {
+  source: 'chat-api',
+  phase: 'technical',
+  stage: 'exploration',
+  next_action: 'continue_chat'
+}
+}
+ POST /api/chat 200 in 6119ms
+[36m[2025-08-02T14:39:56.037Z] [INFO] [chat] Chat message: user[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'user',
+  contentLength: 1633,
+  contentPreview: 'Patofizjologia  Klasycznie czynniki predysponujące do masowego tworzenia się skrzepliny są opisywane...',
+  timestamp: 2025-08-02T14:39:56.037Z,
+  metadata: { source: 'chat-api' }
+}
+[36m[2025-08-02T14:39:56.038Z] [INFO] [api] Processing chat request[0m
+{
+  messagePreview: 'Patofizjologia  Klasycznie czynniki predysponujące...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  historyLength: 14,
+  stage: 'technical_discussion',
+  language: 'pl'
+}
+[36m[2025-08-02T14:39:56.038Z] [INFO] [chat] Vista received message[0m
+{
+  messagePreview: 'Patofizjologia  Klasycznie czynniki predysponujące do masowego tworzenia się skrzepliny są opisywane...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5'
+}
+[36m[2025-08-02T14:39:56.038Z] [INFO] [api] Sending request to Vista API[0m
+{ messageCount: 16, sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5' }
+[36m[2025-08-02T14:40:03.749Z] [INFO] [chat] Vista response generated successfully[0m
+{
+  responseLength: 656,
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  duration: 7711
+}
+[36m[2025-08-02T14:40:03.749Z] [INFO] [chat] Chat message: assistant[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'assistant',
+  contentLength: 656,
+  contentPreview: 'Dobrze, że wspomniałeś o triadzie Virchowa. To ważne, żeby zrozumieć mechanizmy prowadzące do ATE.\n\n...',
+  timestamp: 2025-08-02T14:40:03.749Z,
+  metadata: {
+  source: 'chat-api',
+  phase: 'technical',
+  stage: 'technical_discussion',
+  next_action: 'continue_chat'
+}
+}
+ POST /api/chat 200 in 7755ms
+[36m[2025-08-02T14:40:36.742Z] [INFO] [chat] Chat message: user[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'user',
+  contentLength: 55,
+  contentPreview: 'ja ci to wysyłam - żebyś się trochę doedukował, ziomuś ',
+  timestamp: 2025-08-02T14:40:36.742Z,
+  metadata: { source: 'chat-api' }
+}
+[36m[2025-08-02T14:40:36.743Z] [INFO] [api] Processing chat request[0m
+{
+  messagePreview: 'ja ci to wysyłam - żebyś się trochę doedukował, zi...',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  historyLength: 16,
+  stage: 'technical_discussion',
+  language: 'pl'
+}
+[36m[2025-08-02T14:40:36.743Z] [INFO] [chat] Vista received message[0m
+{
+  messagePreview: 'ja ci to wysyłam - żebyś się trochę doedukował, ziomuś ',
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5'
+}
+[36m[2025-08-02T14:40:36.743Z] [INFO] [api] Sending request to Vista API[0m
+{ messageCount: 18, sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5' }
+[36m[2025-08-02T14:40:40.281Z] [INFO] [chat] Vista response generated successfully[0m
+{
+  responseLength: 300,
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  duration: 3538
+}
+[36m[2025-08-02T14:40:40.281Z] [INFO] [chat] Chat message: assistant[0m
+{
+  sessionId: '3e531ef5-90ea-4d08-ab6d-a5e7ce3ad0e5',
+  userId: undefined,
+  role: 'assistant',
+  contentLength: 300,
+  contentPreview: 'Dzięki za materiały! Zaraz zabieram się do czytania.\n\nPamiętaj, że ATE to poważna choroba wymagająca...',
+  timestamp: 2025-08-02T14:40:40.281Z,
+  metadata: {
+  source: 'chat-api',
+  phase: 'technical',
+  stage: 'technical_discussion',
+  next_action: 'continue_chat'
+}
+}
+ POST /api/chat 200 in 3568ms
+ HEAD / 200 in 39ms
+ GET / 200 in 121ms
+ GET / 200 in 120ms
+ GET / 200 in 120ms
+ GET / 200 in 121ms
+ GET / 200 in 135ms
+ GET / 200 in 135ms
+ GET / 200 in 136ms
+ GET /api/chat 405 in 6ms
+ GET /api/chat 405 in 6ms
+ GET /api/chat 405 in 5ms
+ GET /api/chat 405 in 5ms
+ GET /api/chat 405 in 13ms
+ GET /api/chat 405 in 13ms
+ GET /api/chat 405 in 9ms
+ ✓ Compiled /api/check-config in 230ms (1589 modules)
+API key check: API key is missing
+Available environment variables: [
+  'NVM_INC',
+  'TERM_PROGRAM',
+  'CLAUDE_CODE_ENTRYPOINT',
+  'NODE',
+  'NVM_CD_FLAGS',
+  'INIT_CWD',
+  'TERM',
+  'SHELL',
+  'HOMEBREW_REPOSITORY',
+  'TMPDIR',
+  'TERM_PROGRAM_VERSION',
+  'TERM_SESSION_ID',
+  'ZSH',
+  'GIT_EDITOR',
+  'NVM_DIR',
+  'USER',
+  'LS_COLORS',
+  'COMMAND_MODE',
+  'PNPM_SCRIPT_SRC_DIR',
+  'SSH_AUTH_SOCK',
+  '__CF_USER_TEXT_ENCODING',
+  'TERM_FEATURES',
+  'PAGER',
+  'LSCOLORS',
+  'TERMINFO_DIRS',
+  'LaunchInstanceID',
+  'METAL_DEVICE_ORDINAL',
+  '__CFBundleIdentifier',
+  'PWD',
+  'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE',
+  'LANG',
+  'ITERM_INJECT_SHELL_INTEGRATION',
+  'ITERM_PROFILE',
+  'XPC_FLAGS',
+  'UV_SYSTEM_PYTHON',
+  'XPC_SERVICE_NAME',
+  'pnpm_config_verify_deps_before_run',
+  'SHLVL',
+  'HOME',
+  'COLORFGBG',
+  'LC_TERMINAL_VERSION',
+  'HOMEBREW_PREFIX',
+  'ITERM_SESSION_ID',
+  'LESS',
+  'LOGNAME',
+  'COREPACK_ENABLE_AUTO_PIN',
+  'NVM_BIN',
+  'INFOPATH',
+  'HOMEBREW_CELLAR',
+  'LC_TERMINAL',
+  'SECURITYSESSIONID',
+  'CLAUDECODE',
+  'COLORTERM',
+  'NEXT_RUNTIME',
+  'NEXT_PRIVATE_WORKER',
+  'NEXT_PRIVATE_TRACE_ID',
+  'WATCHPACK_WATCHER_LIMIT',
+  'PORT',
+  '__NEXT_PRIVATE_ORIGIN',
+  '__NEXT_PROCESSED_ENV',
+  'NEXT_DEPLOYMENT_ID',
+  'RUST_MIN_STACK',
+  '__NEXT_PRIVATE_RUNTIME_TYPE'
+]
+API key check: API key is missing
+Available environment variables: [
+  'NVM_INC',
+  'TERM_PROGRAM',
+  'CLAUDE_CODE_ENTRYPOINT',
+  'NODE',
+  'NVM_CD_FLAGS',
+  'INIT_CWD',
+  'TERM',
+  'SHELL',
+  'HOMEBREW_REPOSITORY',
+  'TMPDIR',
+  'TERM_PROGRAM_VERSION',
+  'TERM_SESSION_ID',
+  'ZSH',
+  'GIT_EDITOR',
+  'NVM_DIR',
+  'USER',
+  'LS_COLORS',
+  'COMMAND_MODE',
+  'PNPM_SCRIPT_SRC_DIR',
+  'SSH_AUTH_SOCK',
+  '__CF_USER_TEXT_ENCODING',
+  'TERM_FEATURES',
+  'PAGER',
+  'LSCOLORS',
+  'TERMINFO_DIRS',
+  'LaunchInstanceID',
+  'METAL_DEVICE_ORDINAL',
+  '__CFBundleIdentifier',
+  'PWD',
+  'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE',
+  'LANG',
+  'ITERM_INJECT_SHELL_INTEGRATION',
+  'ITERM_PROFILE',
+  'XPC_FLAGS',
+  'UV_SYSTEM_PYTHON',
+  'XPC_SERVICE_NAME',
+  'pnpm_config_verify_deps_before_run',
+  'SHLVL',
+  'HOME',
+  'COLORFGBG',
+  'LC_TERMINAL_VERSION',
+  'HOMEBREW_PREFIX',
+  'ITERM_SESSION_ID',
+  'LESS',
+  'LOGNAME',
+  'COREPACK_ENABLE_AUTO_PIN',
+  'NVM_BIN',
+  'INFOPATH',
+  'HOMEBREW_CELLAR',
+  'LC_TERMINAL',
+  'SECURITYSESSIONID',
+  'CLAUDECODE',
+  'COLORTERM',
+  'NEXT_RUNTIME',
+  'NEXT_PRIVATE_WORKER',
+  'NEXT_PRIVATE_TRACE_ID',
+  'WATCHPACK_WATCHER_LIMIT',
+  'PORT',
+  '__NEXT_PRIVATE_ORIGIN',
+  '__NEXT_PROCESSED_ENV',
+  'NEXT_DEPLOYMENT_ID',
+  'RUST_MIN_STACK',
+  '__NEXT_PRIVATE_RUNTIME_TYPE'
+]
+API key check: API key is missing
+Available environment variables: [
+  'NVM_INC',
+  'TERM_PROGRAM',
+  'CLAUDE_CODE_ENTRYPOINT',
+  'NODE',
+  'NVM_CD_FLAGS',
+  'INIT_CWD',
+  'TERM',
+  'SHELL',
+  'HOMEBREW_REPOSITORY',
+  'TMPDIR',
+  'TERM_PROGRAM_VERSION',
+  'TERM_SESSION_ID',
+  'ZSH',
+  'GIT_EDITOR',
+  'NVM_DIR',
+  'USER',
+  'LS_COLORS',
+  'COMMAND_MODE',
+  'PNPM_SCRIPT_SRC_DIR',
+  'SSH_AUTH_SOCK',
+  '__CF_USER_TEXT_ENCODING',
+  'TERM_FEATURES',
+  'PAGER',
+  'LSCOLORS',
+  'TERMINFO_DIRS',
+  'LaunchInstanceID',
+  'METAL_DEVICE_ORDINAL',
+  '__CFBundleIdentifier',
+  'PWD',
+  'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE',
+  'LANG',
+  'ITERM_INJECT_SHELL_INTEGRATION',
+  'ITERM_PROFILE',
+  'XPC_FLAGS',
+  'UV_SYSTEM_PYTHON',
+  'XPC_SERVICE_NAME',
+  'pnpm_config_verify_deps_before_run',
+  'SHLVL',
+  'HOME',
+  'COLORFGBG',
+  'LC_TERMINAL_VERSION',
+  'HOMEBREW_PREFIX',
+  'ITERM_SESSION_ID',
+  'LESS',
+  'LOGNAME',
+  'COREPACK_ENABLE_AUTO_PIN',
+  'NVM_BIN',
+  'INFOPATH',
+  'HOMEBREW_CELLAR',
+  'LC_TERMINAL',
+  'SECURITYSESSIONID',
+  'CLAUDECODE',
+  'COLORTERM',
+  'NEXT_RUNTIME',
+  'NEXT_PRIVATE_WORKER',
+  'NEXT_PRIVATE_TRACE_ID',
+  'WATCHPACK_WATCHER_LIMIT',
+  'PORT',
+  '__NEXT_PRIVATE_ORIGIN',
+  '__NEXT_PROCESSED_ENV',
+  'NEXT_DEPLOYMENT_ID',
+  'RUST_MIN_STACK',
+  '__NEXT_PRIVATE_RUNTIME_TYPE'
+]
+API key check: API key is missing
+Available environment variables: [
+  'NVM_INC',
+  'TERM_PROGRAM',
+  'CLAUDE_CODE_ENTRYPOINT',
+  'NODE',
+  'NVM_CD_FLAGS',
+  'INIT_CWD',
+  'TERM',
+  'SHELL',
+  'HOMEBREW_REPOSITORY',
+  'TMPDIR',
+  'TERM_PROGRAM_VERSION',
+  'TERM_SESSION_ID',
+  'ZSH',
+  'GIT_EDITOR',
+  'NVM_DIR',
+  'USER',
+  'LS_COLORS',
+  'COMMAND_MODE',
+  'PNPM_SCRIPT_SRC_DIR',
+  'SSH_AUTH_SOCK',
+  '__CF_USER_TEXT_ENCODING',
+  'TERM_FEATURES',
+  'PAGER',
+  'LSCOLORS',
+  'TERMINFO_DIRS',
+  'LaunchInstanceID',
+  'METAL_DEVICE_ORDINAL',
+  '__CFBundleIdentifier',
+  'PWD',
+  'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE',
+  'LANG',
+  'ITERM_INJECT_SHELL_INTEGRATION',
+  'ITERM_PROFILE',
+  'XPC_FLAGS',
+  'UV_SYSTEM_PYTHON',
+  'XPC_SERVICE_NAME',
+  'pnpm_config_verify_deps_before_run',
+  'SHLVL',
+  'HOME',
+  'COLORFGBG',
+  'LC_TERMINAL_VERSION',
+  'HOMEBREW_PREFIX',
+  'ITERM_SESSION_ID',
+  'LESS',
+  'LOGNAME',
+  'COREPACK_ENABLE_AUTO_PIN',
+  'NVM_BIN',
+  'INFOPATH',
+  'HOMEBREW_CELLAR',
+  'LC_TERMINAL',
+  'SECURITYSESSIONID',
+  'CLAUDECODE',
+  'COLORTERM',
+  'NEXT_RUNTIME',
+  'NEXT_PRIVATE_WORKER',
+  'NEXT_PRIVATE_TRACE_ID',
+  'WATCHPACK_WATCHER_LIMIT',
+  'PORT',
+  '__NEXT_PRIVATE_ORIGIN',
+  '__NEXT_PROCESSED_ENV',
+  'NEXT_DEPLOYMENT_ID',
+  'RUST_MIN_STACK',
+  '__NEXT_PRIVATE_RUNTIME_TYPE'
+]
+API key check: API key is missing
+Available environment variables: [
+  'NVM_INC',
+  'TERM_PROGRAM',
+  'CLAUDE_CODE_ENTRYPOINT',
+  'NODE',
+  'NVM_CD_FLAGS',
+  'INIT_CWD',
+  'TERM',
+  'SHELL',
+  'HOMEBREW_REPOSITORY',
+  'TMPDIR',
+  'TERM_PROGRAM_VERSION',
+  'TERM_SESSION_ID',
+  'ZSH',
+  'GIT_EDITOR',
+  'NVM_DIR',
+  'USER',
+  'LS_COLORS',
+  'COMMAND_MODE',
+  'PNPM_SCRIPT_SRC_DIR',
+  'SSH_AUTH_SOCK',
+  '__CF_USER_TEXT_ENCODING',
+  'TERM_FEATURES',
+  'PAGER',
+  'LSCOLORS',
+  'TERMINFO_DIRS',
+  'LaunchInstanceID',
+  'METAL_DEVICE_ORDINAL',
+  '__CFBundleIdentifier',
+  'PWD',
+  'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE',
+  'LANG',
+  'ITERM_INJECT_SHELL_INTEGRATION',
+  'ITERM_PROFILE',
+  'XPC_FLAGS',
+  'UV_SYSTEM_PYTHON',
+  'XPC_SERVICE_NAME',
+  'pnpm_config_verify_deps_before_run',
+  'SHLVL',
+  'HOME',
+  'COLORFGBG',
+  'LC_TERMINAL_VERSION',
+  'HOMEBREW_PREFIX',
+  'ITERM_SESSION_ID',
+  'LESS',
+  'LOGNAME',
+  'COREPACK_ENABLE_AUTO_PIN',
+  'NVM_BIN',
+  'INFOPATH',
+  'HOMEBREW_CELLAR',
+  'LC_TERMINAL',
+  'SECURITYSESSIONID',
+  'CLAUDECODE',
+  'COLORTERM',
+  'NEXT_RUNTIME',
+  'NEXT_PRIVATE_WORKER',
+  'NEXT_PRIVATE_TRACE_ID',
+  'WATCHPACK_WATCHER_LIMIT',
+  'PORT',
+  '__NEXT_PRIVATE_ORIGIN',
+  '__NEXT_PROCESSED_ENV',
+  'NEXT_DEPLOYMENT_ID',
+  'RUST_MIN_STACK',
+  '__NEXT_PRIVATE_RUNTIME_TYPE'
+]
+API key check: API key is missing
+Available environment variables: [
+  'NVM_INC',
+  'TERM_PROGRAM',
+  'CLAUDE_CODE_ENTRYPOINT',
+  'NODE',
+  'NVM_CD_FLAGS',
+  'INIT_CWD',
+  'TERM',
+  'SHELL',
+  'HOMEBREW_REPOSITORY',
+  'TMPDIR',
+  'TERM_PROGRAM_VERSION',
+  'TERM_SESSION_ID',
+  'ZSH',
+  'GIT_EDITOR',
+  'NVM_DIR',
+  'USER',
+  'LS_COLORS',
+  'COMMAND_MODE',
+  'PNPM_SCRIPT_SRC_DIR',
+  'SSH_AUTH_SOCK',
+  '__CF_USER_TEXT_ENCODING',
+  'TERM_FEATURES',
+  'PAGER',
+  'LSCOLORS',
+  'TERMINFO_DIRS',
+  'LaunchInstanceID',
+  'METAL_DEVICE_ORDINAL',
+  '__CFBundleIdentifier',
+  'PWD',
+  'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE',
+  'LANG',
+  'ITERM_INJECT_SHELL_INTEGRATION',
+  'ITERM_PROFILE',
+  'XPC_FLAGS',
+  'UV_SYSTEM_PYTHON',
+  'XPC_SERVICE_NAME',
+  'pnpm_config_verify_deps_before_run',
+  'SHLVL',
+  'HOME',
+  'COLORFGBG',
+  'LC_TERMINAL_VERSION',
+  'HOMEBREW_PREFIX',
+  'ITERM_SESSION_ID',
+  'LESS',
+  'LOGNAME',
+  'COREPACK_ENABLE_AUTO_PIN',
+  'NVM_BIN',
+  'INFOPATH',
+  'HOMEBREW_CELLAR',
+  'LC_TERMINAL',
+  'SECURITYSESSIONID',
+  'CLAUDECODE',
+  'COLORTERM',
+  'NEXT_RUNTIME',
+  'NEXT_PRIVATE_WORKER',
+  'NEXT_PRIVATE_TRACE_ID',
+  'WATCHPACK_WATCHER_LIMIT',
+  'PORT',
+  '__NEXT_PRIVATE_ORIGIN',
+  '__NEXT_PROCESSED_ENV',
+  'NEXT_DEPLOYMENT_ID',
+  'RUST_MIN_STACK',
+  '__NEXT_PRIVATE_RUNTIME_TYPE'
+]
+API key check: API key is missing
+Available environment variables: [
+  'NVM_INC',
+  'TERM_PROGRAM',
+  'CLAUDE_CODE_ENTRYPOINT',
+  'NODE',
+  'NVM_CD_FLAGS',
+  'INIT_CWD',
+  'TERM',
+  'SHELL',
+  'HOMEBREW_REPOSITORY',
+  'TMPDIR',
+  'TERM_PROGRAM_VERSION',
+  'TERM_SESSION_ID',
+  'ZSH',
+  'GIT_EDITOR',
+  'NVM_DIR',
+  'USER',
+  'LS_COLORS',
+  'COMMAND_MODE',
+  'PNPM_SCRIPT_SRC_DIR',
+  'SSH_AUTH_SOCK',
+  '__CF_USER_TEXT_ENCODING',
+  'TERM_FEATURES',
+  'PAGER',
+  'LSCOLORS',
+  'TERMINFO_DIRS',
+  'LaunchInstanceID',
+  'METAL_DEVICE_ORDINAL',
+  '__CFBundleIdentifier',
+  'PWD',
+  'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE',
+  'LANG',
+  'ITERM_INJECT_SHELL_INTEGRATION',
+  'ITERM_PROFILE',
+  'XPC_FLAGS',
+  'UV_SYSTEM_PYTHON',
+  'XPC_SERVICE_NAME',
+  'pnpm_config_verify_deps_before_run',
+  'SHLVL',
+  'HOME',
+  'COLORFGBG',
+  'LC_TERMINAL_VERSION',
+  'HOMEBREW_PREFIX',
+  'ITERM_SESSION_ID',
+  'LESS',
+  'LOGNAME',
+  'COREPACK_ENABLE_AUTO_PIN',
+  'NVM_BIN',
+  'INFOPATH',
+  'HOMEBREW_CELLAR',
+  'LC_TERMINAL',
+  'SECURITYSESSIONID',
+  'CLAUDECODE',
+  'COLORTERM',
+  'NEXT_RUNTIME',
+  'NEXT_PRIVATE_WORKER',
+  'NEXT_PRIVATE_TRACE_ID',
+  'WATCHPACK_WATCHER_LIMIT',
+  'PORT',
+  '__NEXT_PRIVATE_ORIGIN',
+  '__NEXT_PROCESSED_ENV',
+  'NEXT_DEPLOYMENT_ID',
+  'RUST_MIN_STACK',
+  '__NEXT_PRIVATE_RUNTIME_TYPE'
+]
+ GET /api/check-config 200 in 280ms
+ GET /api/check-config 200 in 280ms
+ GET /api/check-config 200 in 280ms
+ GET /api/check-config 200 in 279ms
+ GET /api/check-config 200 in 279ms
+ GET /api/check-config 200 in 275ms
+ GET /api/check-config 200 in 281ms
+ GET / 200 in 199ms

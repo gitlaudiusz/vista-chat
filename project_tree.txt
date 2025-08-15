@@ -1,0 +1,154 @@
+- .
+- pnpm-lock.yaml
+- types
+  - chat.ts
+- project_tree.txt
+- .DS_Store
+- app
+  - apple-icon.tsx
+  - .DS_Store
+  - icon.tsx
+  - markdown.css
+  - layout.tsx
+  - api
+    - .DS_Store
+    - chat
+      - route.ts
+    - check-config
+      - route.ts
+    - debug-env
+      - route.ts
+    - pre-production-test
+      - route.ts
+    - logs
+      - route.ts
+    - tts
+      - route.ts
+    - stt
+      - route.ts
+  - loading.tsx
+  - page.tsx
+  - globals.css
+- vista_dev.log
+- postcss.config.mjs
+- training
+  - QWEN3_30B_THINKING_MASTER_PLAN.md
+  - mlx_train_qwen3.py
+  - validate_dataset.py
+  - LAUNCH_QWEN3_TRAINING.sh
+  - QWEN3_TRAINING_QUICKSTART.md
+  - find_dataset.sh
+  - qwen3-thinking-prepare.py
+  - cleanup_timemachine.sh
+  - QWEN3_THINKING_MOBILE_SUMMARY.md
+- next.config.mjs
+- next-env.d.ts
+- screenshot_vista.js
+- tailwind.config.ts
+- styles
+  - globals.css
+- components
+  - starfield.tsx
+  - theme-provider.tsx
+  - ui
+    - aspect-ratio.tsx
+    - alert-dialog.tsx
+    - use-mobile.tsx
+    - pagination.tsx
+    - tabs.tsx
+    - card.tsx
+    - slider.tsx
+    - popover.tsx
+    - progress.tsx
+    - toaster.tsx
+    - input-otp.tsx
+    - chart.tsx
+    - hover-card.tsx
+    - sheet.tsx
+    - scroll-area.tsx
+    - resizable.tsx
+    - label.tsx
+    - sonner.tsx
+    - navigation-menu.tsx
+    - accordion.tsx
+    - drawer.tsx
+    - tooltip.tsx
+    - alert.tsx
+    - use-toast.ts
+    - switch.tsx
+    - calendar.tsx
+    - breadcrumb.tsx
+    - radio-group.tsx
+    - command.tsx
+    - toggle-group.tsx
+    - avatar.tsx
+    - menubar.tsx
+    - dialog.tsx
+    - badge.tsx
+    - sidebar.tsx
+    - table.tsx
+    - separator.tsx
+    - button.tsx
+    - toggle.tsx
+    - toast.tsx
+    - checkbox.tsx
+    - collapsible.tsx
+    - dropdown-menu.tsx
+    - select.tsx
+    - textarea.tsx
+    - input.tsx
+    - skeleton.tsx
+    - context-menu.tsx
+    - form.tsx
+    - carousel.tsx
+  - system-prompt-tester.tsx
+  - help-overlay.tsx
+  - markdown-renderer.tsx
+  - chat-interface.tsx
+  - log-viewer.tsx
+  - libra-constellation.tsx
+  - product-showcase.tsx
+  - constellation-label.tsx
+  - constellation-guide.tsx
+  - search-bar.tsx
+  - footer.tsx
+  - tts-player.tsx
+  - pre-production-tester.tsx
+  - animated-text.tsx
+  - api-debug.tsx
+  - loading-dots.tsx
+  - particle-cursor.tsx
+- public
+  - placeholder-logo.svg
+  - placeholder-logo.png
+  - placeholder-user.jpg
+  - placeholder.jpg
+  - placeholder.svg
+- .gitignore
+- package-lock.json
+- package.json
+- hooks
+  - use-mobile.tsx
+  - use-toast.ts
+- scripts
+  - production-deploy.js
+  - cleanup-logs.js
+  - deploy.js
+- lib
+  - env-utils.ts
+  - api-helpers.ts
+  - streaming.ts
+  - vista-service.ts
+  - utils.ts
+  - test-utils.ts
+  - env-config.ts
+  - logging
+    - api-logger.ts
+    - chat-logger.ts
+    - logger.ts
+    - session.ts
+  - chat-service.ts
+- components.json
+- tsconfig.json
+- v0-user-next.config.js
+- CLAUDE.md
